@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="section-container" style="display: flex; justify-content: center; align-items: center; flex-direction: row; min-height: 100vh;">
+        <section id="crypt-section">
+            <div class="container">
+                <h1 class="margin-bottom-5">Encryptor</h1>
+                <article class="margin-bottom-5 img-container">
+                    <div class="img-canvas">
+                        <p>Image Encrypted</p>
+                        <canvas id="myCanvas" width="150" height="150"></canvas>
+                    </div>
+                </article>
+                <article class="message">
+                    <p>Menssage</p>
+                    <textarea id="textArea"></textarea>
+                </article>
+                <input type="file" id="upload" accept="image/*" class="btn">
+                <article class="buttons-container">
+                    <button class="btn" id="downloadBtn">Download</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="decrypt-section">
+            <div class="container">
+                <h2 class="margin-bottom-5">Decryptor</h2>
+                <article class="margin-bottom-5 img-container">
+                    <div class="img-canvas">
+                        <p>Image Decryptor</p>
+                        <canvas id="canvas-decryptor" width="150" height="150"></canvas>
+                    </div>
+                </article>
+                <article class="message">
+                    <p>Menssage</p>
+                    <textarea id="textArea-decryptor"></textarea>
+                </article>
+                <input type="file" id="upload-decryptor" accept="image/*" class="btn">
+            </div>
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/decryptor.js"></script>
+</body>
+
+</html>
